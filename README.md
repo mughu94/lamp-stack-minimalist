@@ -4,7 +4,7 @@ This script automates the setup of a LAMP (Linux, Apache, MySQL, PHP) stack on U
 
 ## Prerequisites
 
-- Ubuntu Server (tested on Ubuntu XX.XX)
+- Ubuntu Server (tested on Ubuntu 20 and 22)
 - Root or sudo access to the server
 
 ## Installation Steps
