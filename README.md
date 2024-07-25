@@ -1,2 +1,75 @@
-# lamp-stack-minimalist
-Install Linux, Apache, MySQL, PHP (LAMP) Stack and Creating Wordpress in Bash Script
+# Automated Web Server Setup with WordPress Installation for UBUNTU
+
+This script automates the setup of a LAMP (Linux, Apache, MySQL, PHP) stack on Ubuntu, including the installation of WordPress on a specified domain.
+
+## Prerequisites
+
+- Ubuntu Server (tested on Ubuntu XX.XX)
+- Root or sudo access to the server
+
+## Installation Steps
+
+1. **Update and Upgrade Packages:**
+
+    ```bash
+    sudo apt update
+    sudo apt upgrade -y
+    ```
+
+2. **Install Apache2:**
+
+    ```bash
+    sudo apt install apache2 -y
+    ```
+
+3. **Start and Enable Apache2 Service:**
+
+    ```bash
+    sudo systemctl enable apache2
+    sudo systemctl start apache2
+    ```
+
+4. **Install MySQL Server and Secure Installation:**
+
+    ```bash
+    sudo apt install mysql-server -y
+    sudo mysql_secure_installation
+    ```
+
+5. **Install Memcached (Optional):**
+
+    ```bash
+    sudo apt install memcached -y
+    ```
+
+6. **Install PHP and Required Modules:**
+
+    ```bash
+    sudo apt install php libapache2-mod-php php-mysql php-xml php-gd php-mbstring php-curl php-memcached -y
+    ```
+
+7. **Run the WordPress Setup Script (`setup_wordpress.sh`)**
+
+    - This script interacts with the user to set up a new WordPress installation.
+    - It prompts for the domain name and whether to install WordPress.
+
+    ```bash
+    ./setup_wordpress.sh
+    ```
+
+## `setup_wordpress.sh` Script Details
+
+- The script `setup_wordpress.sh` automates the setup of WordPress:
+  - Asks for the domain name and whether to install WordPress.
+  - Generates a random database name, user, and password.
+  - Creates MySQL database and user, and configures permissions.
+  - Downloads and configures WordPress with generated database credentials.
+  - Optionally installs WordPress Salts for enhanced security.
+  - Configures Apache virtual host for the specified domain.
+  - Enables the site, sets up rewrite rules, and restarts Apache.
+
+## Notes
+
+- Ensure your server meets the necessary requirements before running the script.
+- The script assumes root or sudo privileges for execution.
+- Customize the Apache virtual host configuration or WordPress setup as per your specific needs.
