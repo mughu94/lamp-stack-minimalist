@@ -103,3 +103,5 @@ To automatically install the LAMP stack and set up WordPress:
 - Ensure your server meets the necessary requirements before running the script.
 - The script assumes root or sudo privileges for execution.
 - Customize the Apache virtual host configuration or WordPress setup as per your specific needs.
+
+Feel free to adjust the instructions or add more details as per your deployment and setup preferences. This structure provides clear guidance on both setting up and removing domains with associated services using your scripts.
