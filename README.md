@@ -67,6 +67,13 @@ This script automates the setup of a LAMP (Linux, Apache, MySQL, PHP) stack on U
   - Optionally installs WordPress Salts for enhanced security.
   - Configures Apache virtual host for the specified domain.
   - Enables the site, sets up rewrite rules, and restarts Apache.
+ 
+## `remove_domain.sh` Script Details
+
+- The script `remove_domain.sh` removes:
+  - The web root directory associated with the domain.
+  - The Apache virtual host configuration file.
+  - The MySQL database and user associated with the WordPress installation (if found in `wp-config.php`).
 
 ## Notes
 
