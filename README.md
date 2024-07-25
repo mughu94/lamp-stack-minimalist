@@ -7,7 +7,7 @@ This script automates the setup of a LAMP (Linux, Apache, MySQL, PHP) stack on U
 - Ubuntu Server (tested on Ubuntu 20 and 22)
 - Root or sudo access to the server
 
-### Automatic Installation of LAMP Stack and WordPress
+### Automatic Installation of LAMP Stack
 
 To automatically install the LAMP stack and set up WordPress:
 
