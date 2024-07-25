@@ -14,7 +14,7 @@ To automatically install the LAMP stack and set up WordPress:
 1. **Download and run the installation script (`install_lamp.sh`):**
 
     ```bash
-    wget https://example.com/path/to/install_lamp.sh
+    git clone https://github.com/mughu94/lamp-stack-minimalist.git
     chmod +x install_lamp.sh
     ./install_lamp.sh
     ```
