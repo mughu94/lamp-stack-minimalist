@@ -15,8 +15,12 @@ To automatically install the LAMP stack and set up WordPress:
 
     ```bash
     git clone https://github.com/mughu94/lamp-stack-minimalist.git
+    cd lamp-stack-minimalist
     chmod +x install_lamp.sh
     ./install_lamp.sh
+
+    chmod +x setup_wordpress.sh
+    ./setup_wordpress.sh
     ```
 
    This script will:
