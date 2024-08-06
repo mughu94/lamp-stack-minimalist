@@ -20,11 +20,6 @@ To automatically install the LAMP stack and set up WordPress:
     chmod +x install_lamp.sh
     ./install_lamp.sh
 
-    chmod +x setup_wordpress.sh
-    ./setup_wordpress.sh
-
-    chmod +x remove_domain.sh
-    ./remove_domain.sh
     ```
 
    This script will:
@@ -80,7 +75,14 @@ To automatically install the LAMP stack and set up WordPress:
     - It prompts for the domain name and whether to install WordPress.
 
     ```bash
+    chmod +x setup_wordpress.sh
     ./setup_wordpress.sh
+    ```
+
+    - This if you want revoke domain from conf apache and remove database
+    ```bash
+    chmod +x remove_domain.sh
+    ./remove_domain.sh
     ```
 ## `install_lamp.sh` Script Details
 
