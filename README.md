@@ -21,6 +21,9 @@ To automatically install the LAMP stack and set up WordPress:
 
     chmod +x setup_wordpress.sh
     ./setup_wordpress.sh
+
+    chmod +x remove_domain.sh
+    ./remove_domain.sh
     ```
 
    This script will:
