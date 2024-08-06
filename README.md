@@ -1,4 +1,4 @@
-# Minimal Auto Install LAMP Web Server with One Click WordPress Installation for Ubuntu 18 or later
+# Auto Installer LAMP Stack Web Server with One Click WordPress Installation for Ubuntu 18 or later
 
 This script automates the setup of a LAMP (Linux, Apache, MySQL, PHP) stack on Ubuntu, including the installation of WordPress on a specified domain.
 
