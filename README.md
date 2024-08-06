@@ -78,7 +78,7 @@ To automatically install the LAMP stack and set up WordPress:
     ```bash
     ./setup_wordpress.sh
     ```
-### `install_lamp.sh` Script Details
+## `install_lamp.sh` Script Details
 
 - This script automates the installation of Apache, MySQL, PHP, and Memcached.
 - It updates and upgrades the system, installs necessary packages, and configures services.
